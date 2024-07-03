@@ -17,4 +17,6 @@ RUN apt-get update -yq \
 && git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k \
 # julia lsp
 && zsh -c "julia julia_lsp_setup.jl"
+# lazyvim init
+&& zsh -c "nvim -c "q""
 
