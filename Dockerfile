@@ -16,5 +16,5 @@ RUN apt-get update -yq \
 && sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" \
 && git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k \
 # julia lsp
-&& julia julia_lsp_setup.jl
+&& zsh -c "julia julia_lsp_setup.jl"
 
