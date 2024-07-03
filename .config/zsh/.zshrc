@@ -28,19 +28,6 @@ source $ZSH/oh-my-zsh.sh
 # ---------------------------------
 # ------------ aliases ------------
 # ---------------------------------
-# --- Emacs ---
-alias emacsserver="emacs --daemon&"
-alias kill-emacs="emacsclient -e '(kill-emacs)'"
-alias ec="emacsclient -c -a emacs&"
-
-# # --- kitty ---
-# alias icat="kitty +kitten icat"	# image viewer
-
-# # --- Qtile ---
-# alias qtile-reload="qtile cmd-obj -o cmd -f reload_config"	# mod+ctrl+r with default Qtile keybindings
-# alias qtile-restart="qtile cmd-obj -o cmd -f restart"
-# alias qtile-log="cat ~/.local/share/qtile/qtile.log"
-
 # --- Misc ---
 # alias brave="brave --password-store=basic"	# disable wallet popup
 alias cat="batcat"
@@ -52,15 +39,4 @@ alias resource="source $ZDOTDIR/.zshrc"
 # ---------------------------------
 # --- keybindings ---
 bindkey -v	# vi mode
-
-# --- start ssh-agent ---
-eval `ssh-agent -s`
-# load private key for guiburon@github.com on workstation-wsl
-ssh-add ~/.ssh/github
-ssh-add ~/.ssh/lyolinlst
-# clear print of ssh-agent
-clear
-
-# --- cosmetic ---
-# neofetch
 
