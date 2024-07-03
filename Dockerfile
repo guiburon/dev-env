@@ -20,3 +20,5 @@ RUN apt-get update -yq \
 # lazyvim init
 && zsh -c "nvim -c "q""
 
+ENTRYPOINT /bin/zsh
+
