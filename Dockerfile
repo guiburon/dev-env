@@ -19,11 +19,11 @@ RUN cd \
 && sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" \
 && git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-# # julia lsp setup
-# RUN zsh -c "julia $HOME/julia_lsp_setup.jl"
-#
-# # lazyvim init
-# RUN zsh -c "nvim -c "q""
+# lazyvim init
+RUN zsh -c "nvim -c "q""
+
+# julia lsp setup
+RUN zsh -c "julia $HOME/julia_lsp_setup.jl"
 
 ENTRYPOINT /bin/zsh
 
