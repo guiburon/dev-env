@@ -3,7 +3,7 @@ FROM debian:latest
 ADD . /root/
 
 RUN apt-get update -yq \
-&& apt-get install git wget curl tmux zsh fd-find ripgrep exa bat -yq \
+&& apt-get install git wget curl tmux zsh fd-find ripgrep exa bat clang python3 -yq \
 && apt-get clean -y \
 && cd \
 # neovim
